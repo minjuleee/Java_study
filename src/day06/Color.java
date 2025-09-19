@@ -1,5 +1,7 @@
 package day06;
 
+import java.util.Random;
+
 import utils.Mu;
 
 public class Color {
@@ -33,6 +35,31 @@ public class Color {
 		}
 		Mu.p("");
 		
+		// True Color
+		// Red, Green, Blue를 각각 0~255 중 랜덤으로 뽑는다.
+		// 위 과정을 256번 반복하여 출력한다.
+		Random rd = new Random();
+		int r, g, b;
+		
+		for(int i=0; i<256; i++) {
+			r = rd.nextInt(256);
+			g = rd.nextInt(256);
+			b = rd.nextInt(256);
+			System.out.print("\033[48;2;" + r + ";" + g + ";" + b + "m" +"\033[0m");	
+		}
+		Mu.p("");
+		
+		
+		// 0~255 중 한 숫자를 랜덤으로 뽑는다.
+		// Red, Green, Blue에 위 숫자를 똑같이 넣는다.
+		// 위 과정을 256번 반복하여 출력한다.
+		for(int i=0; i<256; i++) {
+			r = rd.nextInt(256);
+			g = r;
+			b = r;
+			System.out.print("\033[48;2;" + r + ";" + g + ";" + b + "m" +"\033[0m");	
+		}
+		Mu.p("");
 	}
 
 }
