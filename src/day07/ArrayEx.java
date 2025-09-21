@@ -1,6 +1,5 @@
 package day07;
 
-import day06.ForEx;
 import utils.Mu;
 
 public class ArrayEx {
@@ -86,8 +85,6 @@ public class ArrayEx {
 				Mu.p("학생이름 : " + std);
 			}
 		}
-		
-		ForEx.main(null);
 	}
 
 }
