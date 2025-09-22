@@ -30,6 +30,7 @@ public class Cat {
 		Mu.p("야옹 하면서 밥달라고 한 후 밥을 먹는다");
 	}
 	
+	// static은 모두의 소속, age와 name은 해당 객체만 가지고 잇는
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Cat cat1 = new Cat("나비", 5);
