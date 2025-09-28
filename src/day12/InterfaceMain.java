@@ -20,7 +20,7 @@ public class InterfaceMain {
 		mi.dMethod2();
 		Mu.p("mi.aaa = " + mi.aaa);
 //		mi.sMethod();	// 실제로 new로 만들어진 객체는 MyClass
-		MyInterface mi2 = new MyInterface();	// 어림도 없
+//		MyInterface mi2 = new MyInterface();	// 어림도 없음
 	}
 
 }
