@@ -86,7 +86,7 @@ public class BaseClassEx {
 		
 		// Calendar
 		Calendar c = Calendar.getInstance();
-		
+		 
 		// get 메서드로 내가 원하는 달력의 값을 얻어낼 수 있음
 		Mu.p("오늘의 요일 : " + c.get(Calendar.DAY_OF_WEEK));
 		Mu.p("오늘의 연도 : " + c.get(Calendar.YEAR));
