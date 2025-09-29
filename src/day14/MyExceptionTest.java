@@ -9,7 +9,8 @@ public class MyExceptionTest {
 //			sendReceipt(4000000000);
 //			sendReceipt(300);
 			
-			System.exit(0);
+//			return;	// return되기 전에 finally는 수행함
+//			System.exit(0);  // finally 수행 안
 		} catch(Exception e) {
 			e.printStackTrace();
 			
